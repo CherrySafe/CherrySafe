@@ -77,9 +77,8 @@ contract CherryMulti{
         if(token != ETH_ADDR){
             require(IERC20(token).balanceOf(address(this)) >= amount);
         }
-        
+   
         uint transactionId = transactionIdx++;
-        
         Transaction memory transaction;
         transaction.status = false;
         transaction.token = token;
@@ -172,7 +171,6 @@ contract CherryMulti{
         pendingTransactions.push(transactionId);
         emit TransactionCreated(msg.sender, transactionId);
     }
-    
     
     function changeManage(address account,bool goal) isManager public{
         uint transactionId = transactionIdx++;
