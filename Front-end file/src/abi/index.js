@@ -2,6 +2,7 @@ import Creator from "./data/Creator.json"
 import MultiSign from "./data/MultiSign.json"
 
 const CONTRACTS = {
+    
     Creator:{address:"0xd6BC386d072e04f2119f1Bca3bB6F61E6B0920D7",abi:Creator},
     MultiSign:{abi:MultiSign},
 };
