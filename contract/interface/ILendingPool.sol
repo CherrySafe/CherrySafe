@@ -3,7 +3,6 @@ pragma experimental ABIEncoderV2;
 
 interface ILendingPool {
   
-
   function deposit(
     address asset,
     uint256 amount,
