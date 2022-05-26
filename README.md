@@ -1,8 +1,8 @@
 ![](https://raw.githubusercontent.com/CherrySafe/CherrySafe/main/Photo/CherrySafe.jpg)
 
-## Name 
+## Project name 
 
-CherrySafe Tool
+CherrySafe
 
 ## Introduction
 
