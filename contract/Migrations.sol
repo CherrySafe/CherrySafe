@@ -469,4 +469,3 @@ contract ERC20MODEL{
 
 
 
-
