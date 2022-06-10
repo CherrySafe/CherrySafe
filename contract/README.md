@@ -29,4 +29,3 @@ Create multi-signature wallet, manage multi-signature wallet address, store basi
 ### CherryMulti
 The specific logic of multiple wallets
 
-
