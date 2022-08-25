@@ -268,3 +268,19 @@ contract CherryMulti{
         IUniswapV2Router01(router).removeLiquidity(tokenA,tokenB,IERC20(pair).balanceOf(address(this)),0,0,address(this),deadline);
     }
 
+function withdrawLending(address token,uint amount) isManager public returns(bool){
+    address lending = creator.lending();
+    ILendingPool(lending).withdraw(token,amount,address(this));
+}
+
+function getLiquidity(address pair) public view returns(uint){
+    return IERC20(pair).balanceOf(address(this));
+}
+
+function getBalance() public view returns(uint){
+    return address(this).balance;
+}
+
+function getERC20Balance(address token) public view returns(uint){
+    return IERC20(token).balanceOf(address(this));
+}
