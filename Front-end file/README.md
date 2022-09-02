@@ -1,4 +1,5 @@
-# CherrySafe front-end file
+# This is the CherrySafe front-end file
+
 ## Config
 ```src/abi/index.js```
 ## Project setup
