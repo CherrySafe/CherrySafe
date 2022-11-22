@@ -1,3 +1,5 @@
+## Project name
+
 ## Overview
 
 CherrySafe is a Gnosis-based multi-signature wallet management tool built on Ethereum and its L2 ZK networks, which fits in the category of Ethereum infrastructure products. The funds in the multi-signature wallets can be deposited into any lending protocol or DEX via CherrySafe, in a bid to generate yield of the funds in the multi-sig vault. 
