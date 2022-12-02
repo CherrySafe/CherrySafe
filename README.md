@@ -17,7 +17,7 @@ Fund management is the core module of various DAO organizations, managing commun
 
 2.By establishing Defi controller, we can deposit the funds of multi-signature wallet into various DeFi protocols, so that the funds in the multi-signature wallet can increase in value and gain additional income. That is also a major innovation
 
-## Features and specialties:
+## Features and specialties
 
 1.You can add liquidity to a decentralized exchange by adding funds from the multi-signature wallet.
 2.You can also put the money in your wallet into the loan agreement, so as to obtain financial benefits
