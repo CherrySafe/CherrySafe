@@ -416,3 +416,53 @@ contract ERC20 is Context {
         emit Approval(owner, spender, amount);
     }
 
+    /**
+     * @dev Sets {decimals} to a value other than the default one of 18.
+     *
+     * WARNING: This function should only be called from the constructor. Most
+     * applications that interact with token openzeppelin will not expect
+     * {decimals} to ever change, and may work incorrectly if it does.
+     */
+    function _setupDecimals(uint8 decimals_) internal {
+        _decimals = decimals_;
+    }
+
+    /**
+     * @dev Hook that is called before any transfer of tokens. This includes
+     * minting and burning.
+     *
+     * Calling conditions:
+     *
+     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens
+     * will be to transferred to `to`.
+     * - when `from` is zero, `amount` tokens will be minted for `to`.
+     * - when `to` is zero, `amount` of ``from``'s tokens will be burned.
+     * - `from` and `to` are never both zero.
+     *
+     * To learn more about hooks, head to xref:ROOT:extending-openzeppelin.adoc#using-hooks[Using Hooks].
+     */
+    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
+}
+
+contract ERC20MODEL{
+    constructor(address owner,string memory name,string memory symbol,uint totalSupply, uint8 decimals) public  {
+        
+    }
+    
+    // event CreatToken(string tokenName, string symbol,uint indexed index,uint timestamp);
+    // address public owner;
+    // uint public index;
+    // address[] public tokenArray;
+    
+    // constructor(address owner_) public {
+    //     owner = owner_;
+    // }
+    
+    // function creatToken(string memory tokenName_,string memory symbol_,uint8 decimals_, address owner_,uint totalSupply_) public returns(address){
+    //     address token = address(new ERC20(tokenName_,symbol_,decimals_,owner_,totalSupply_));
+    //     tokenArray.push(token);
+    //     index++;
+    //     return token;
+    // }
+}
+
