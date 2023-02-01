@@ -1,5 +1,3 @@
-## Documentation on how to run the project
-
 ## Dependencies
 
 Linux or Mac
