@@ -105,4 +105,4 @@ const mnemonic =  fs.readFileSync(".secret").toString().trim();
    db: {
      enabled: false
    }
- }
+ };
